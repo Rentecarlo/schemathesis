@@ -4,13 +4,18 @@ Changelog
 `Unreleased`_ - TBD
 -------------------
 
-**Fixed**
-
-- Prevent a small terminal width causing a crash (due to negative length used in an f-string) when printing percentage
-
 **Added**
 
 - Support for external examples via the ``externalValue`` keyword. `#884`_
+
+**Changed**
+
+- Pin ``cryptography<3.4``. This is a temporary solution that allows us to continue building Alpine-based docker images.
+  Tracking issue for the proper solution - `#1033`_
+
+**Fixed**
+
+- Prevent a small terminal width causing a crash (due to negative length used in an f-string) when printing percentage
 
 `3.0.9`_ - 2021-02-10
 ---------------------
@@ -1595,6 +1600,7 @@ Deprecated
 .. _0.3.0: https://github.com/schemathesis/schemathesis/compare/v0.2.0...v0.3.0
 .. _0.2.0: https://github.com/schemathesis/schemathesis/compare/v0.1.0...v0.2.0
 
+.. _#1033: https://github.com/schemathesis/schemathesis/issues/1033
 .. _#1028: https://github.com/schemathesis/schemathesis/issues/1028
 .. _#1022: https://github.com/schemathesis/schemathesis/issues/1022
 .. _#1020: https://github.com/schemathesis/schemathesis/issues/1020

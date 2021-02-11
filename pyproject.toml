@@ -39,6 +39,8 @@ pytest = ">4.6.4"
 pyyaml = "^5.1"
 pytest-subtests = ">=0.2.1,<1.0"
 requests = "^2.22"
+# Temporary workaround for GH-1033
+cryptography = "<3.4"
 click = "^7.0"
 importlib_metadata = { version = "^1.1", python = "<3.8" }
 werkzeug = ">0.16.0"
